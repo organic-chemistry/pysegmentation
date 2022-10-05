@@ -21,8 +21,13 @@ conda activate pysegmentation
 pip install -e ./
 pip install setuptools==59.5.0
 
-Note
-====
+Example
+=========
+There is a [notebook](notebook/Example.ipynb) in notebook to have an example for training 
 
-This project has been set up using PyScaffold 4.0.2. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+Train
+=========
+```
+python scripts/training.py  --data ~/simuNano/meg3_mock/learning_test --default_root_dir first_test
+```
+It will create first_test/lightning_logs/version_0/checkpoints/ folder were the training weights are located
