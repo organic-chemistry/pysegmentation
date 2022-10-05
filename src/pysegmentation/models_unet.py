@@ -3,6 +3,7 @@
 Created on Mon Nov  9 19:10:58 2020
 
 @author: MGD
+from: https://github.com/marcosgdiaz/UNET_1D
 """
 
 from torch import nn

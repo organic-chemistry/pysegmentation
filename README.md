@@ -16,6 +16,8 @@ discarded.
 For the example I set the bin_size to 200 , but it was a mistake , I think we can
 start with 100
 
+The code for the unet come from here [Unet](https://github.com/marcosgdiaz/UNET_1D)
+
 Install
 ===========
 ```
@@ -23,7 +25,7 @@ git clone https://github.com/organic-chemistry/pysegmentation.git
 cd pysegmentation
 ```
 
-then 
+then
 ```
 conda create -n pysegmentation python=3.9 pytorch jupyterlab pytorch-lightning matplotlib pandas -c conda-forge
 conda activate pysegmentation
