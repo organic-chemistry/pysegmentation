@@ -5,10 +5,10 @@ import torch.nn.functional as Fun
 
 
 class LitUnet(pl.LightningModule):
-    def __init__(self, num_features=8,kernel_size=3):
+    def __init__(self,output_dim=6, num_features=8,kernel_size=3):
         super().__init__()
         self.save_hyperparameters()
-        self.model = UNET_1D(input_dim=1,output_dim=5,
+        self.model = UNET_1D(input_dim=1,output_dim=output_dim,
                              num_features=num_features,
                              kernel_size=kernel_size)
 
